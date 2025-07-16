@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRG - Tech Ride & Glide</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #456f8f;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #1b3148;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TRG</h1>
+    <p>Tech Ride & Glide – Connecting youth with green transportation: Bikes & Skate Rentals</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="how.html">How It Works</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to TRG</h1>
+    <p>Tech Ride & Glide – Clean, Affordable, and Youth-Friendly Transport</p>
+  </section>
+
+  <section class="image-section">
+    <div class="image-box">
+      <img src="TRG1.jpg" alt="Youth on bike" class="feature-image" />
+    </div>
+    <div class="image-box">
+      <img src="TRG2.jpg" alt="Eco-friendly sign" class="feature-image" />
+    </div>
+    <div class="image-box">
+        <img src="TRG3.jpg" alt="Map of stations" class="feature-image" />
+    </div>
+  </section>
+
+  <section class="form-section" style="padding: 40px 20px;">
+    <h2 style="text-align:center; color: #1b3148;">Book Your Ride</h2>
+    <form style="max-width: 500px; margin: auto; background-color: #e6e5de; padding: 20px; border-radius: 10px;">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px;" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required style="width: 100%; margin-bottom: 10px;" /><br />
+
+      <label for="vehicle">Choose a ride:</label><br />
+      <select id="vehicle" name="vehicle" required style="width: 100%; margin-bottom: 10px;">
+        <option value="bike">Bike</option>
+        <option value="skate">Skate</option>
+      </select><br />
+
+      <label for="date">Booking Date:</label><br />
+      <input type="date" id="date" name="date" required style="width: 100%; margin-bottom: 20px;" /><br />
+
+      <button type="submit" class="btn btn-green">Book Now</button>
+    </form>
+  </section>
+
+  <section class="form-section" style="padding: 40px 20px;">
+    <h2 style="text-align:center; color: #1b3148;">Login to Your Account</h2>
+    <form style="max-width: 400px; margin: auto; background-color: #e6e5de; padding: 20px; border-radius: 10px;">
+      <label for="login-email">Email:</label><br />
+      <input type="email" id="login-email" name="login-email" required style="width: 100%; margin-bottom: 10px;" /><br />
+
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" required style="width: 100%; margin-bottom: 20px;" /><br />
+
+      <button type="submit" class="btn btn-blue">Login</button>
+    </form>
+  </section>
+
+  <section class="form-section" style="padding: 40px 20px;">
+    <h2 style="text-align:center; color: #1b3148;">Create an Account</h2>
+    <form style="max-width: 500px; margin: auto; background-color: #e6e5de; padding: 20px; border-radius: 10px;">
+      <label for="signup-name">Full Name:</label><br />
+      <input type="text" id="signup-name" name="signup-name" required style="width: 100%; margin-bottom: 10px;" /><br />
+
+      <label for="signup-email">Email:</label><br />
+      <input type="email" id="signup-email" name="signup-email" required style="width: 100%; margin-bottom: 10px;" /><br />
+
+      <label for="signup-password">Password:</label><br />
+      <input type="password" id="signup-password" name="signup-password" required style="width: 100%; margin-bottom: 10px;" /><br />
+
+      <label for="signup-type">I am a:</label><br />
+      <select id="signup-type" name="signup-type" required style="width: 100%; margin-bottom: 20px;">
+        <option value="user">User (renter)</option>
+        <option value="vendor">Shop/Company</option>
+      </select><br />
+
+      <button type="submit" class="btn btn-blue">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 TRG (Tech Ride & Glide) | Built for a greener tomorrow
+  </footer>
+</body>
+</html>
